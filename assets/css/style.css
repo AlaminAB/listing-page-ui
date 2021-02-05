@@ -813,3 +813,6 @@ ul.slick-dots li button {
 ul.slick-dots li.slick-active button {
   background: var(--primary);
 }
+.slick-arrow:hover {
+  background: var(--h);
+}
