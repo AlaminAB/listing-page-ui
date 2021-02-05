@@ -1,4 +1,5 @@
 
+
 /* ***Responsive media query*** */
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -45,6 +46,8 @@
         top: -15px;
         left: 0;
         background:var(--h);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
         display: block;
         left: -105%;
@@ -189,7 +192,10 @@ section.what-we-do {
         margin-top: 40px;
     }
     .footer-wrap {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .footer-left {
         margin-top: 12px;
@@ -203,6 +209,9 @@ section.what-we-do {
     }
     p{
         font-size:16px;
+    }
+    .testimonial-body {
+        min-height: 270px;
     }
 }
 

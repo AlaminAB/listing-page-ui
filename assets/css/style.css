@@ -1,3 +1,5 @@
+
+
 :root {
   --body: #fff; --a: #405573; --p: #405573; --h: #405573; --dark: #1F1F20; --primary:#009EFF; }
   html {
@@ -15,6 +17,8 @@ body {
 }
 
 a, .button, button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -114,6 +118,8 @@ header::after {
 
 a.nav-link {
   color: rgb(255, 255, 255);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   font-weight: 500;
   font-family: Ubuntu;
@@ -140,7 +146,9 @@ header .container {
 .header-content-wrap {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0px;
   width: 100%;
 }
@@ -154,6 +162,8 @@ header .container {
 .video-btton i {
   color: rgb(255, 255, 255);
   font-size: 60px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
 
@@ -163,8 +173,12 @@ header .container {
 }
 
 .video-btton a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .video-btton a span {
@@ -172,6 +186,8 @@ header .container {
   color: rgb(255, 255, 255);
   font-weight: 600;
   margin-left: 20px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
 
@@ -187,8 +203,12 @@ header .container {
   position: absolute;
   bottom: 100px;
   right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   height: 43px;
   z-index: 99;
@@ -214,6 +234,16 @@ header .container {
   -webkit-animation: 3s linear 0s infinite normal none running scroll-animation;
 }
 
+@-webkit-keyframes scroll-animation {
+  0% {
+      background-position-y: 0%;
+  }
+
+  100% {
+      background-position-y: 100%;
+  }
+}
+
 @keyframes scroll-animation {
   0% {
       background-position-y: 0%;
@@ -232,7 +262,8 @@ header .container {
 }
 
 .service-card {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
   text-align: center;
   min-height: 256px;
   padding: 30px 25px;
@@ -259,7 +290,8 @@ header .container {
 }
 
 .service-card {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 45px;
   text-align: center;
   min-height: 256px;
   padding: 30px 25px;
@@ -288,7 +320,9 @@ header .container {
   top: 0px;
   left: 50%;
   position: absolute;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-radius: 10px;
 }
 
@@ -332,7 +366,8 @@ section.what-we-do {
 .nav-bar-top.stickys {
   background: rgb(255, 255, 255);
   padding: 5px 0px;
-  box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
+  -webkit-box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
+          box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
   -webkit-animation: fadeInDown 1s both;
   animation: fadeInDown 1s both;
 }
@@ -418,9 +453,15 @@ img{
   width: 100%;
   height: 100%;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 opacity:0;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -437,8 +478,12 @@ section.testimonial-area {
 }
 
 .testimonial-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user-img img {
@@ -464,7 +509,8 @@ section.testimonial-area {
 
 .testimonial-body {
   background: #fff;
-  box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
+  -webkit-box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
+          box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
   padding: 30px 25px;
   margin-top: 40px;
   position: relative;
@@ -517,6 +563,7 @@ section.testimonial-area {
   outline: none;
 }
 .testimonial-card {
+  cursor: -webkit-grab;
   cursor: grab;
 }
 .faq-content-area {
@@ -552,7 +599,9 @@ button.btn.btn-link.collapsed:after {
   right: 10px;
   top: 50%;
   font-size: 15px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 button.btn.btn-link:after {
   position: absolute;
@@ -562,7 +611,9 @@ button.btn.btn-link:after {
   right: 10px;
   top: 50%;
   font-size: 15px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .card {
@@ -634,7 +685,8 @@ button.btn.btn-link:after {
   font-size: 15px;
 }
 .contact-form form input:focus {
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+  -webkit-box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+          box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 footer {
   margin-top: 100px;
@@ -643,9 +695,15 @@ footer {
 }
 
 .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-left p {
@@ -655,6 +713,8 @@ footer {
 }
 
 .footer-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -725,9 +785,15 @@ i.far.fa-times {
 }
 
 ul.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top:20px
 }
 
