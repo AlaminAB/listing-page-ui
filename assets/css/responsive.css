@@ -1,0 +1,259 @@
+
+/* ***Responsive media query*** */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1500px){ 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .header-content {
+        text-align: center;
+    }
+    .header-content h1 br{
+        display: none;
+    }
+    .service-card {
+        min-height: 287px;
+        padding: 30px 10px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+
+}
+@media (max-width:991px){
+    .navbar-nav .nav-link {
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    i.far.fa-times {
+        display:block;
+    }
+    .stickys a.nav-link {
+        color: #fff;
+        padding: 0 !important;
+    }
+
+    div#navbarSupportedContent {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: -15px;
+        left: 0;
+        background:var(--h);
+        transition: 1s;
+        display: block;
+        left: -105%;
+      }
+      nav.navbar.navbar-expand-lg {
+        width: 100%;
+        position: static;
+      }
+      ul.navbar-nav.ml-auto {
+        margin: 0 auto;
+      }
+      
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .header-content {
+        text-align: center;
+    }
+    .header-content h1 br{
+        display: none;
+    } 
+    h1 {
+        font-size: 35px;
+    }
+    .video-btton {
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .scroll-down-section {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .what-we-do-des h5 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .testimonial-body {
+        min-height: 270px;
+    }
+    .fa-arrow-left.slick-arrow {
+        padding: 6px 16px;
+        right: 65px
+    }
+    .fa-arrow-right.slick-arrow {
+        padding: 6px 16px;
+    }
+    button.btn.btn-link {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .card-body {
+        padding: 10px 10px !important;
+    }
+    footer {
+        margin-top: 80px;
+    }
+.section-padding-top{
+    padding-top:80px;
+}
+section.what-we-do {
+    padding-top: 40px;
+}
+    
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .header-content {
+        text-align: center;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .video-btton {
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .video-btton i {
+        font-size: 50px;
+    }
+    .scroll-down-section {
+        bottom: 15px;
+        right: 10px;
+        height: 35px;
+        z-index: 99;
+    }
+    .scroll-down p {
+        font-size: 15px;
+        margin-bottom: 0px;
+    } 
+    a.navbar-brand img {
+        width: 100%;
+        max-width: 125px;
+    }  
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 18px;
+    } 
+    header {
+        background: url(../img/banner-md.jpg) 0% 0% / cover;
+    }
+    .video-btton a span {
+        font-size: 17px;
+        margin-left: 12px;
+    }.navbar-nav .nav-link {
+        font-size: 20px;
+    }
+    .what-we-do-des {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+    .section-padding-top {
+        padding-top: 50px;
+    }
+    .what-we-do-des.right-des-what {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .service-card {
+
+        padding: 30px 10px;
+        margin-bottom: 30px;
+    }
+    .service-card-body p {
+        font-size: 15px;
+    }
+    .service-card-body h4 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .contact-form {
+        margin-top: 40px;
+    }
+    .footer-wrap {
+        flex-direction: column-reverse;
+    }
+    .footer-left {
+        margin-top: 12px;
+    }
+    footer {
+        margin-top: 60px;
+        padding: 20px 0px;
+    }
+    .scroll-img-animation {
+        margin-left: 5px;
+    }
+    p{
+        font-size:16px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media  (max-width:575.98px) { 
+    .service-card {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 30px 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .what-we-do-des h5 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    .screen-shot-card {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .card-header {
+        padding: 0px 2px !important;
+    }
+    button.btn.btn-link {
+        font-size: 16px;
+        padding-right: 23px;
+    }
+    .card-body {
+        padding: 10px !important;
+    }
+    .what-we-do-des {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    header {
+        background: url(../img/banner-sm.jpg) 0% 0% / cover;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
