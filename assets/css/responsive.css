@@ -213,10 +213,16 @@ section.what-we-do {
     .testimonial-body {
         min-height: 270px;
     }
+    .fancybox-outer .fancybox-inner{
+        height: 250px !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media  (max-width:575.98px) { 
+    .fancybox-outer .fancybox-inner{
+        height: 195px !important;
+    }
     .service-card {
         max-width: 400px;
         margin: 0 auto;
