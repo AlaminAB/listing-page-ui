@@ -17,7 +17,7 @@
 
   <!-- All CSS -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css"/>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <!-- Main Style -->
@@ -78,7 +78,7 @@
             <h1>Custom IDX <br>
               Home Search </h1>
             <div class="video-btton">
-              <a class="fancybox-media" href="https://player.vimeo.com/video/499326587?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t="> <i class="fal fa-play-circle"></i>
+              <a  class="video-a" href="https://player.vimeo.com/video/499326587"> <i class="fal fa-play-circle"></i>
                 <span>Watch the video</span></a>
             </div>
           </div>
@@ -524,17 +524,20 @@
     </div>
   </footer>
 
+
   <!-- All JavaScript -->
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="text/javascript" src="assets/js/fancybox-media.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 
   <!-- Main Js -->
   <script src="assets/js/main.js"></script>
   <script>
+$('.video-a').fancybox({
+  
+});
     document.addEventListener("scroll", function () {
       $(".nav-bar-top").offsetTop;
       if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -599,16 +602,8 @@
     
   ]
 });
-$('.fancybox-media').fancybox({
-		openEffect  : 'none',
-    closeEffect : 'none',
-    width:"100%",
-    maxWidth:"950px",
-    maxHeight:"600px",
-		helpers : {
-			media : {}
-		}
-	});
+
+
   </script>
 </body>
 
