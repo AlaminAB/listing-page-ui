@@ -813,6 +813,13 @@ ul.slick-dots li button {
 ul.slick-dots li.slick-active button {
   background: var(--primary);
 }
+.slick-arrow {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
 .slick-arrow:hover {
   background: var(--h);
 }
