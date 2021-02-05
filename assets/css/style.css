@@ -511,11 +511,12 @@ section.testimonial-area {
 .testimonial-body {
   background: #fff;
   -webkit-box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
-          box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
+  box-shadow: 0px 0px 18px 2px rgb(0 0 0 / 6%);
   padding: 30px 25px;
   margin-top: 40px;
   position: relative;
   margin-bottom: 10px;
+  min-height: 250px;
 }
 
 .testimonial-body p {
